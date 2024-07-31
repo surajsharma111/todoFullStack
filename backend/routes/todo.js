@@ -19,6 +19,7 @@ router.get('/:id', async function(req, res, next) {
 router.get('/', async function(req, res, next) {
     const todos = await todoServices.getAllTodos();
     res.status(200).json({data: todos})
+    
 
   });
 
@@ -26,6 +27,7 @@ router.get('/', async function(req, res, next) {
     
     const data = req.body;
     const todo =  await todoServices.addTodo(data)
+    console.log(data)
     res.status(201).json({message: 'New to do created sucessfully!', data: todo})
   });
 
