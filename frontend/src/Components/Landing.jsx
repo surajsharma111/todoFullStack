@@ -5,7 +5,7 @@ import ToDoHero from "./TodoHero";
 import { useEffect, useState } from "react";
 import { TiTick } from "react-icons/ti";
 import TodoList from "./TodoList";
-import getAllTodos from "../action/todo";
+import getAllTodos from "../action/getTodo";
 import addTodo from "../action/addtodo";
 
 
@@ -28,7 +28,7 @@ function Landing() {
         const newTodo = {
             title: data.title,
             id: self.crypto.randomUUID(),
-            isCompleted: true
+            isCompleted: false
         };
         setTodos((prevTodos) => [...prevTodos, newTodo])
         console.log(data.task)
