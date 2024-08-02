@@ -46,6 +46,7 @@ router.get('/', async function(req, res, next) {
   router.delete('/:id', async function(req, res, next) {
     try{
          const id = req.params.id;
+         console.log(id)
          const todo = await todoServices.deleteTodo(id)
          res.status(200).json({message: 'Todo has been deleted'});
     }

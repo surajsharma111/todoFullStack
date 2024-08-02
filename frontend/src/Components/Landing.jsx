@@ -10,6 +10,7 @@ import addTodo from "../action/addtodo";
 
 
 
+
 function Landing() {
     const [todos, setTodos] = useState([])
     const todos_completed = todos.filter((todo) => todo.is_completed === true).length
@@ -36,6 +37,7 @@ function Landing() {
 
        
     }
+   
     useEffect(() => {
         (async() =>{
            const allData = await getAllTodos();
