@@ -8,15 +8,9 @@ import { useState } from "react";
 // eslint-disable-next-line react/prop-types
 function TodoList({ todos }) {  // Destructure todos prop
     
-    const [delTodo, setDelTodo] = useState(todos || [])
-  
-  
-   const handleDelete = async ()=>{
- 
-     await deleteTodo(id)
    
-
-   }
+  
+   
    
 
    
@@ -33,7 +27,7 @@ function TodoList({ todos }) {  // Destructure todos prop
                             </p>
                             <span className="flex flex-row gap-4">
 
-                                <button onClick={()=>handleDelete(index)} className=" hover:text-green-300 cursor-pointer"><RiDeleteBin6Line /> </button>
+                                <button  className=" hover:text-green-300 cursor-pointer"><RiDeleteBin6Line /> </button>
                                 <button className=" hover:text-green-300 cursor-pointer"><MdEditSquare /></button>
                             </span>
                         </li>
