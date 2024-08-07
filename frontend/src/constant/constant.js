@@ -1,1 +1,1 @@
-export const API_ENDPOINT =(location.hostname === 'localhost')? "https:/localhost:3000" : 'https://todo-full-stack-psi.vercel.app/';
+export const API_ENDPOINT =(location.hostname === 'localhost')? "https:/localhost:3000" : 'https://todo-full-stack-psi.vercel.app';
