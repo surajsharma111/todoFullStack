@@ -1,7 +1,7 @@
 import { API_ENDPOINT } from "../constant/constant";
 
 async function deleteTodo(id){
-    const url = `${API_ENDPOINT}/todos/${id}`;
+    const url = `${API_ENDPOINT}/${id}`;
     try {
          await fetch (url, {
             method: 'DELETE'}).then((response) =>{
